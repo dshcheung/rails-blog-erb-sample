@@ -3,5 +3,7 @@
   "version": "0.0.1",
   "main": "",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
 }
