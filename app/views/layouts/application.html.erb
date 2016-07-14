@@ -8,7 +8,11 @@
 </head>
 <body class="erb <%= controller_name %> <%= action_name %>">
 
-<%= yield %>
+  <%= render 'partials/header' %>
+
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
