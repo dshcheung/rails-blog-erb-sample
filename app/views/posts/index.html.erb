@@ -1,0 +1,19 @@
+<h1 class="text-center">All My Posts</h1>
+
+<% if current_user.present? %>
+  <div class="text-center">
+    <a class="btn btn-primary" href="<%= new_post_path %>">New</a>
+  </div>
+<% end %>
+
+<div class="row">
+  <% @posts.each do |post| %>
+    <div class="col-xs-4">
+      <a href="<%= post_path(post) %>">
+        <h2><%= post.title %></h2>
+        <p><%= post.content%></p>
+        <p>by: <%= post.user.email %></p>
+      </a>
+    </div>
+  <% end %>
+</div>

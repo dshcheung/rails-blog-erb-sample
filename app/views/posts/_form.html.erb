@@ -1,0 +1,15 @@
+<%= form_for @post do |f| %>
+  <div class="field form-group">
+    <label>Title</label>
+    <input type="text" name="post[title]" value="<%= @post.title %>">
+  </div>
+
+  <div class="field form-group">
+    <label>Content</label>
+    <input type="text" name="post[content]" value="<%= @post.content %>">
+  </div>
+
+  <div class="actions">
+    <%= f.submit class: "btn btn-warning" %>
+  </div>
+<% end %>
